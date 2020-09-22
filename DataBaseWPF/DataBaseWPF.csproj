@@ -80,7 +80,7 @@
     <Compile Include="GetCP.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Configerationpanel.cs" />
+    <Compile Include="Model\ConfigerationPanel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

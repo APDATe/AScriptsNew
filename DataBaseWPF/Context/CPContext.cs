@@ -1,12 +1,12 @@
-﻿using DataBaseWPF.Model.ConfigerationPanelModel;
+﻿using DataBaseWPF.Model;
 using SQLite.CodeFirst;
 using System.Data.Entity;
 
-namespace DataBaseWPF.Context.ConfigerationPanel
+namespace DataBaseWPF.Context
 {
     public class CPContext : DbContext
     {
-        public DbSet<Configerationpanel> Configerationpanels { get; set; }
+        public DbSet<ConfigerationPanel> ConfigerationPanels { get; set; }
         public CPContext() : base("MyContext") { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

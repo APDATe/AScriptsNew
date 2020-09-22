@@ -3,8 +3,6 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows.Data;
 using System.Windows.Input;
-using DataBaseWPF.Context.ConfigerationPanel;
-using DataBaseWPF.Model.ConfigerationPanelModel;
 
 namespace AS.ViewModels
 {

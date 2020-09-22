@@ -115,8 +115,12 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonWPF\CommonWPF.csproj">
+      <Project>{14b1f146-86e8-4af9-9831-9120721a7c1c}</Project>
+      <Name>CommonWPF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataBaseWPF\DataBaseWPF.csproj">
-      <Project>{be38430c-4b7b-448f-bec2-398280df1bf8}</Project>
+      <Project>{BE38430C-4B7B-448F-BEC2-398280DF1BF8}</Project>
       <Name>DataBaseWPF</Name>
     </ProjectReference>
   </ItemGroup>

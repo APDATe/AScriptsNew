@@ -1,12 +1,12 @@
 ﻿using SQLite.CodeFirst;
 
-namespace DataBaseWPF.Model.ConfigerationPanelModel
+namespace DataBaseWPF.Model
 {
-    public class Configerationpanel
+   public class ConfigerationPanel
     {
-        [Autoincrement]
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string ParentId { get; set; }
+            [Autoincrement]
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public string ParentId { get; set; }
     }
 }
