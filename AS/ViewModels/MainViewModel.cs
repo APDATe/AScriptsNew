@@ -1,10 +1,10 @@
 ﻿using AS.Commands;
-using DataBaseWPF;
 using DataBaseWPF.Context.ConfigerationPanel;
 using DataBaseWPF.Model.ConfigerationPanelModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Entity;
 using System.Linq;
 using System.Windows.Data;
 using System.Windows.Input;
@@ -19,11 +19,12 @@ namespace AS.ViewModels
         
         public MainViewModel()
         {
-            var context = new GetCP();
+            using (var context = new CPContext())
+            {
+               // context.Configerationpanels.Load();
+                Configerationpanels = CollectionViewSource.GetDefaultView(context.Configerationpanels.Local.ToList());
 
-            Configerationpanels = CollectionViewSource.GetDefaultView(context.Get_());
-         
-
+            }
             TestCommand = new Command(x => Test());
         }
 
