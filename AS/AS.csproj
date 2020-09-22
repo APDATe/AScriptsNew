@@ -112,8 +112,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Context\" />
-    <Folder Include="Control\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
